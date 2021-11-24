@@ -128,6 +128,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+    
 }
 
 .home-container .media-icons a {
@@ -188,9 +189,10 @@ header {
 }
 
 .home-container .home-img img {
-    width: 80%;
+    width: 70%;
     border-radius: 30%;
-    transform: translate(0px, 0);
+    transform: translate(100px, 0);
+    /* min-width: 20vw; */
 
 }
 
@@ -261,7 +263,78 @@ header {
     transform: translateY(-80px);
 }
 
+.section-title-02::before{
+    content: " ";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: var(--second-color);
+}
+
 .container{
     position: relative;
     flex-direction: column;
+}
+
+.about .container .content{
+    column-gap: 40px;
+    width: 100%;
+}
+
+.about-img {
+    position: relative;
+
+}
+
+.about-img img{
+    max-width: 100%;
+    min-width: 500px;
+    border-radius: 10px;
+}
+
+
+.about-info .description{
+    max-width: 600px;
+    
+}
+
+.about-info .description h3{
+font-size: 2.5em;
+}
+
+.about-info .description h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.about-info .description h4 span{
+    color: var(--second-color);
+
+}
+.about-info .description p{
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--line-color);
+
+}
+
+.about-info .professional-list{
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-info .professional-list .list-item h3 {
+font-size: 2.5em;
+font-weight: 700;
+}
+
+.professional-list .list-item span{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
 }
