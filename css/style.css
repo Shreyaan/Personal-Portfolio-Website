@@ -71,6 +71,11 @@ header {
     transition: .6s ease
 }
 
+header.stickyClass{
+    background: rgba(255, 255, 255, 0.39);
+    box-shadow: var(--box-shadow);
+}
+
 .nav-bar {
     position: relative;
     height: 5rem;
